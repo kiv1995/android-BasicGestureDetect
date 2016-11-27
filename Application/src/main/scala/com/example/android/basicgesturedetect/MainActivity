@@ -22,10 +22,7 @@ import android.view.Menu
 import com.example.android.common.activities.SampleActivityBase
 import com.example.android.common.logger.{Log, LogFragment, LogWrapper, MessageOnlyLogFilter}
 
-object MainActivity {
-  val TAG: String = "MainActivity"
-  val FRAGTAG: String = "BasicGestureDetectFragment"
-}
+
 
 class MainActivity extends SampleActivityBase {
   override protected def onCreate(savedInstanceState: Bundle) {
@@ -56,3 +53,5 @@ class MainActivity extends SampleActivityBase {
     Log.i(MainActivity.TAG, "Ready")
   }
 }
+
+
