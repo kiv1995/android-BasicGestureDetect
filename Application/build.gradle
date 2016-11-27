@@ -36,6 +36,20 @@ List<String> dirs = [
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
+    buildTypes {
+
+        debug {
+            useProguard true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+        release {
+            useProguard true
+            minifyEnabled true
+            proguardFile file('proguard.cfg')
+        }
+
+    }
 
     defaultConfig {
         minSdkVersion 18
