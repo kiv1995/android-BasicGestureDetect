@@ -38,8 +38,8 @@ import com.example.android.basicgesturedetect.*;
 import android.test.ActivityInstrumentationTestCase2;
 
 /**
-* Tests for BasicGestureDetect sample.
-*/
+ * Tests for BasicGestureDetect sample.
+ */
 public class SampleTests extends ActivityInstrumentationTestCase2<MainActivity> {
 
     private MainActivity mTestActivity;
@@ -59,12 +59,12 @@ public class SampleTests extends ActivityInstrumentationTestCase2<MainActivity> 
         // All other fields are null or empty.
         mTestActivity = getActivity();
         mTestFragment = (BasicGestureDetectFragment)
-            mTestActivity.getSupportFragmentManager().getFragments().get(1);
+                mTestActivity.getSupportFragmentManager().getFragments().get(1);
     }
 
     /**
-    * Test if the test fixture has been set up correctly.
-    */
+     * Test if the test fixture has been set up correctly.
+     */
     public void testPreconditions() {
         //Try to add a message to add context to your assertions. These messages will be shown if
         //a tests fails and make it easy to understand why a test failed
@@ -73,7 +73,7 @@ public class SampleTests extends ActivityInstrumentationTestCase2<MainActivity> 
     }
 
     /**
-    * Add more tests below.
-    */
+     * Add more tests below.
+     */
 
 }

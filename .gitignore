@@ -89,3 +89,8 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+.idea/compiler.xml
+.idea/copyright/
+.idea/misc.xml
+.idea/scala_compiler.xml
+scala/
