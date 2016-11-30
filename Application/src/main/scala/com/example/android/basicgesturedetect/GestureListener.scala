@@ -30,7 +30,6 @@ object GestureListener {
     touchType match {
       case MotionEvent.TOOL_TYPE_FINGER =>
         touchTypeDescription += "(finger)"
-        break //todo: break is not supported
       case MotionEvent.TOOL_TYPE_STYLUS =>
         touchTypeDescription += "(stylus, "
         val stylusPressure: Float = e.getPressure
@@ -39,16 +38,12 @@ object GestureListener {
           touchTypeDescription += ", buttons pressed: " + getButtonsPressed(e)
         }
         touchTypeDescription += ")"
-        break //todo: break is not supported
       case MotionEvent.TOOL_TYPE_ERASER =>
         touchTypeDescription += "(eraser)"
-        break //todo: break is not supported
       case MotionEvent.TOOL_TYPE_MOUSE =>
         touchTypeDescription += "(mouse)"
-        break //todo: break is not supported
       case _ =>
         touchTypeDescription += "(unknown tool)"
-        break //todo: break is not supported
     }
     return touchTypeDescription
   }
